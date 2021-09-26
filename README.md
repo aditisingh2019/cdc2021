@@ -1,13 +1,7 @@
-# 2021 CDC Project Submission Template
+# 2021 CDC Project Submission
 
-Welcome to the datathon/hackathon portion of the Carolina Data Challenge!
-
-This repository will serve as a starting platform for your team's project. You can create your own repository using this as a template. Click [here](https://github.com/Carolina-Data-Challenge/project-template-21/generate) or the "Use this Template" button in the top right corner to generate a repository using this one as a template.
-
----
-
-## Folders in this template.
-The default repository directory is as follows:
+## Folders
+The repository directory is as follows:
 
 ### /datasets
 This is where you can find more information on your datasets. You may put your datasets in this folder but please keep in mind git/Github's file size limitations. Links to this year's datasets are as follows:
@@ -38,18 +32,4 @@ More resources on projects [here](https://github.com/Carolina-Data-Challenge/pro
 You can see more info on what you need to submit here. In summary, both your repository and a 5 minute video must be submitted to our [Devpost](https://cdcunc21.devpost.com/) for judging. In addition, you must specify which track you want to submit to.
 
 More details and instructions on submissions [here](https://github.com/Carolina-Data-Challenge/project-template-21/tree/main/submission).
-
----
-
-If you have any questions during the, either technical or logistical, be sure to reach out to a mentor and/or a director for assistance!
-
----
-
-If you are unfamiliar with Git and/or GitHub, we highly recommend that you utilize the following resources:
- 
- | Name | Description |
- |------|-------------|
- | [GitHub Desktop App](https://desktop.github.com/) | The GitHub desktop app makes it extremely easy to interact with repositories and visualize the changes you are making.
- | [Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) | This markdown cheat sheet will help you style and structure your readme file if you feel inclined to do so.
- | [Git Fundamentals](https://rogerdudler.github.io/git-guide/) | This brief but informative guide will get you up and running with everything you need to know for your project submission in GitHub.
  
