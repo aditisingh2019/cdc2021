@@ -25,3 +25,4 @@ Here is some filler texts explaining the notebooks we all built.
 **TODO: ADD NOTEBOOKS HERE**
 
 1. [Uninsured and Employment]({{site.baseurl}}{% link uninsured_employment.md %})
+2. [Uninsured and Race]({{site.baseurl}}{% link uninsured_race_politics.md %})
