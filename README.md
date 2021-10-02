@@ -14,7 +14,7 @@
   - Notebooks converted to markdown should be in the project root. After converting, you need to add the following to the top of of the file:
     ```
     ---
-    title: CDC 2021
+    title: Your Title
     ---
     ```
   - Additionally, you'll need to change any references to images from the converted file to reference the `assets` folder, likely in the following form
