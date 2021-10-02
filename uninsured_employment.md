@@ -1,8 +1,13 @@
 ---
-title: CDC 2021
+title: Uninsurance and Employment
 ---
 
 # Uninsurance and Unemployment
+
+We wanted to see if there was any relationship between a county's unemployment rate and its uninsured rate.
+Starting out, we expected there might be a correlation, since most people get health insurance through their employer, meaning they would become uninsured if they are unemployed.
+However, we found that there was no correlation.
+Instead, the data shows a possible correlation with other factors, especially the prevalence of minority racial groups.
 
 ```python
 import pandas as pd
@@ -24,6 +29,12 @@ joined_df["Unemployment Rate (%)"] /= 100
 
 ## Visuals of Unemployment Rate and Uninsurance Rate
 
+Below is a histogram of the unemployment rate (orange) and uninsurance rate (blue) for each county.
+We can see that the distributions are both roughtly symmetrical, with uninsurance rate having a higher median and being more right-skewed.
+
+Also below is a skatterplot of the unemployment rate and uninsurance rate.
+We can see that there is almost no correlation between the two.
+
 ```python
 from matplotlib import pyplot as plt
 
@@ -42,12 +53,11 @@ plt.show()
 ```
 
 ![png]({{site.baseurl}}/assets/uninsured_employment_files/uninsured_employment_4_0.png)
-
 ![png]({{site.baseurl}}/assets/uninsured_employment_files/uninsured_employment_4_1.png)
 
-We can see that although both percent uninsurance and unemployment rates have similar distributions, they are not at all correlated.
-
 ## What Other Variables Correlate with Uninsurance?
+
+Since unemployment rate does not show a sizable correlation, we'll look at other numeric variables that might correlate with uninsurance rate.
 
 ```python
 import numpy as np
@@ -55,9 +65,8 @@ import numpy as np
 # Drop all categorical columns
 no_categorical = joined_df.drop(columns=["State Name", "FIPS Code", "County Name", "LAUS Code", "State FIPS Code", "County FIPS Code", "County Name/State Abbreviation", "Unnamed: 5", "Year"])
 
-# Get the indices for percent uninsured and unemployment rate
+# Get the indices for percent uninsured
 pu_index = list(no_categorical.columns).index("Percent Uninsured")
-ur_index = list(no_categorical.columns).index("Unemployment Rate (%)")
 
 # Calculate a correlation coefficient matrix
 A = np.corrcoef(no_categorical, rowvar=False)
