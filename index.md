@@ -22,4 +22,6 @@ We should probably mention what datasets we used etc.
 
 Here is some filler texts explaining the notebooks we all built.
 
-1. **TODO:** Links to notebooks
+**TODO: ADD NOTEBOOKS HERE**
+
+1. [Uninsured and Employment]({{site.baseurl}}{% link uninsured_employment.md %})
